@@ -1,4 +1,6 @@
-package com.udacity.jdnd.course3.critter.pet;
+package com.udacity.jdnd.course3.critter.pet.model.dtos;
+
+import com.udacity.jdnd.course3.critter.pet.model.PetType;
 
 import java.time.LocalDate;
 
@@ -60,5 +62,26 @@ public class PetDTO {
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    public PetDTO(PetDTO dto) {
+        this.id = dto.getId();
+        this.type = dto.getType();
+        this.name = dto.getName();
+        this.ownerId = dto.getOwnerId();
+        this.birthDate = dto.getBirthDate();
+        this.notes = dto.getNotes();
+    }
+
+    public PetDTO() {
+    }
+
+    public PetDTO(long id, PetType type, String name, long ownerId, LocalDate birthDate, String notes) {
+        this.id = id;
+        this.type = type;
+        this.name = name;
+        this.ownerId = ownerId;
+        this.birthDate = birthDate;
+        this.notes = notes;
     }
 }
