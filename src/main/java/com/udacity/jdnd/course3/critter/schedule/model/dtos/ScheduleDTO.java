@@ -1,6 +1,6 @@
-package com.udacity.jdnd.course3.critter.schedule.models.dtos;
+package com.udacity.jdnd.course3.critter.schedule.model.dtos;
 
-import com.udacity.jdnd.course3.critter.user.EmployeeSkill;
+import com.udacity.jdnd.course3.critter.user.model.EmployeeSkill;
 
 import java.time.LocalDate;
 import java.util.List;
